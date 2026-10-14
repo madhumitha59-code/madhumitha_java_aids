@@ -1,0 +1,191 @@
+1)
+class Main {
+    public static void main(String[] args) {
+        int balance = 750;
+
+        if (balance < 1000)
+            System.out.println("Low Balance Alert");
+    }
+}
+
+
+2)import java.util.Scanner;
+
+public class Q2_OddNumberReward {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter score: ");
+        int score = sc.nextInt();
+
+        if (score % 2 != 0) {
+            System.out.println("Bonus Unlocked");
+        }
+
+        sc.close();
+    }
+}
+
+
+3)import java.util.Scanner;
+
+public class Q3_TemperatureStatus {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter temperature: ");
+        int temp = sc.nextInt();
+
+        if (temp >= 30) {
+            System.out.println("Warm Day");
+        } else {
+            System.out.println("Cool Day");
+        }
+
+        sc.close();
+    }
+}
+
+
+4)import java.util.Scanner;
+
+public class Q4_LastDigitChallenge {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter a number: ");
+        int num = sc.nextInt();
+
+        if (num % 10 == 7) {
+            System.out.println("Lucky Ending");
+        } else {
+            System.out.println("Not a Lucky Ending");
+        }
+
+        sc.close();
+    }
+}
+
+
+5)import java.util.Scanner;
+
+public class Q5_ShoppingBagCheck {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter purchase amount: ");
+        int amount = sc.nextInt();
+
+        if (amount >= 500) {
+            System.out.println("Reusable Bag Available");
+        } else {
+            System.out.println("No Free Bag");
+        }
+
+        sc.close();
+    }
+}
+
+
+6)import java.util.Scanner;
+
+public class Q6_ExamGradeCalculator {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter mark: ");
+        int mark = sc.nextInt();
+
+        if (mark < 0 || mark > 100) {
+            System.out.println("Invalid Mark");
+        } else if (mark >= 90) {
+            System.out.println("Grade A");
+        } else if (mark >= 75) {
+            System.out.println("Grade B");
+        } else if (mark >= 60) {
+            System.out.println("Grade C");
+        } else if (mark >= 35) {
+            System.out.println("Grade D");
+        } else {
+            System.out.println("Fail");
+        }
+
+        sc.close();
+    }
+}
+
+
+7)import java.util.Scanner;
+
+public class Q7_ElectricityConsumption {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter units consumed: ");
+        int units = sc.nextInt();
+
+        if (units < 0) {
+            System.out.println("Invalid Units");
+        } else if (units < 100) {
+            System.out.println("Low Consumption");
+        } else if (units < 200) {
+            System.out.println("Medium Consumption");
+        } else if (units < 300) {
+            System.out.println("High Consumption");
+        } else {
+            System.out.println("Very High Consumption");
+        }
+
+        sc.close();
+    }
+}
+
+
+8)import java.util.Scanner;
+
+public class Q8_EmployeeExperience {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter experience in years: ");
+        int years = sc.nextInt();
+
+        if (years < 0) {
+            System.out.println("Invalid Experience");
+        } else if (years == 0) {
+            System.out.println("Fresher");
+        } else if (years <= 2) {
+            System.out.println("Junior");
+        } else if (years <= 5) {
+            System.out.println("Intermediate");
+        } else {
+            System.out.println("Senior");
+        }
+
+        sc.close();
+    }
+}
+
+
+9)import java.util.Scanner;
+
+public class Q9_DeliveryCharge {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter order amount: ");
+        int amount = sc.nextInt();
+
+        if (amount < 0) {
+            System.out.println("Invalid Order");
+        } else if (amount >= 2000) {
+            System.out.println("Delivery Charge: Rs. 0");
+        } else if (amount >= 1000) {
+            System.out.println("Delivery Charge: Rs. 30");
+        } else {
+            System.out.println("Delivery Charge: Rs. 60");
+        }
+
+        sc.close();
+    }
+}
